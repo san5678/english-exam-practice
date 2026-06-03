@@ -23,14 +23,38 @@ def index():
     return render_template('index.html')
 
 
+TOPIC_MAP = {
+    2: 'CPU与内存',
+    3: '存储与总线',
+    4: 'I/O设备',
+    5: '数据结构基础',
+    6: '数据结构与算法',
+    7: '数据结构综合',
+    8: '数据结构与算法综合',
+    9: '操作系统',
+    10: 'C语言',
+    11: 'C++与Java',
+    12: '面向对象编程'
+}
+
+def _short_title(doc):
+    """根据试卷 id 生成简短标题"""
+    pid = doc.get('id', 0)
+    topic = TOPIC_MAP.get(pid, '')
+    if topic:
+        return f'第{pid}次 · {topic}'
+    return doc['filename'].replace('.docx', '')
+
+
 @app.route('/api/documents')
 def api_documents():
     data = load_data()
     result = []
     for i, doc in enumerate(data):
+        title = _short_title(doc)
         result.append({
             'index': i,
-            'title': doc['filename'].replace('.docx', ''),
+            'title': title,
             'filename': doc['filename'],
             'question_count': doc['question_count']
         })

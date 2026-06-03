@@ -1347,7 +1347,7 @@ function nextQuestion() {
   if (currentIndex < questions.length - 1) {
     currentIndex++;
     renderQuestion();
-    window.scrollTo(0, 0);
+    scrollToQuestion();
   }
 }
 
@@ -1355,7 +1355,7 @@ function prevQuestion() {
   if (currentIndex > 0) {
     currentIndex--;
     renderQuestion();
-    window.scrollTo(0, 0);
+    scrollToQuestion();
   }
 }
 
@@ -1471,8 +1471,13 @@ function jumpToQuestion(index) {
   if (index >= 0 && index < questions.length) {
     currentIndex = index;
     renderQuestion();
-    window.scrollTo(0, 0);
+    scrollToQuestion();
   }
+}
+
+function scrollToQuestion() {
+  const card = document.getElementById('question-card');
+  if (card) card.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 async function generateRandomExam() {
@@ -1507,7 +1512,7 @@ async function generateRandomExam() {
     document.getElementById('doc-selector').value = '';
     updateStats();
     renderQuestion();
-    window.scrollTo(0, 0);
+    scrollToQuestion();
   } catch (e) {
     console.error('生成试卷失败', e);
   }
