@@ -1,5 +1,917 @@
 [
   {
+    "id": 1,
+    "title": "第1次 · 硬件知识",
+    "filename": "计算机专业英语第一次作业（硬件知识）答案+翻译+解析.docx",
+    "question_count": 42,
+    "questions": [
+      {
+        "id": 1,
+        "type": "single",
+        "section": "一、单选题（共30题）",
+        "question": "The abbreviation \"USB\" stands for ( ).",
+        "question_translation": "缩写 “USB” 的全称是（）。",
+        "options": [
+          "Unique Serial Bus",
+          "Unique System Bus",
+          "Universal Serial Bus",
+          "Universal System Bus"
+        ],
+        "option_translations": [
+          "唯一串行总线",
+          "唯一系统总线",
+          "通用串行总线",
+          "通用系统总线"
+        ],
+        "answer": "C",
+        "explanation": "USB 是 Universal Serial Bus（通用串行总线）的缩写。",
+        "introduction": ""
+      },
+      {
+        "id": 2,
+        "type": "single",
+        "section": "一、单选题（共30题）",
+        "question": "Which type of memory is volatile (loses data when power is off)? ( )",
+        "question_translation": "哪类存储器是易失性的（断电后数据丢失）？（）",
+        "options": [
+          "Hard Disk",
+          "SSD",
+          "RAM",
+          "ROM"
+        ],
+        "option_translations": [
+          "硬盘",
+          "固态硬盘",
+          "随机存取存储器",
+          "只读存储器"
+        ],
+        "answer": "C",
+        "explanation": "RAM（内存）属于易失性存储，断电数据清空；硬盘、SSD、ROM 断电后数据均可保留。",
+        "introduction": ""
+      },
+      {
+        "id": 3,
+        "type": "single",
+        "section": "一、单选题（共30题）",
+        "question": "Which of the following is a wireless input device? ( )",
+        "question_translation": "以下哪项是无线输入设备？（）",
+        "options": [
+          "Wired Keyboard",
+          "Wireless Mouse",
+          "Printer",
+          "Scanner"
+        ],
+        "option_translations": [
+          "有线键盘",
+          "无线鼠标",
+          "打印机",
+          "扫描仪"
+        ],
+        "answer": "B",
+        "explanation": "鼠标属于输入设备，无线鼠标符合题意；打印机、扫描仪不属于无线输入设备。",
+        "introduction": ""
+      },
+      {
+        "id": 4,
+        "type": "single",
+        "section": "一、单选题（共30题）",
+        "question": "Which of the following is an output device? ( )",
+        "question_translation": "以下哪项是输出设备？（）",
+        "options": [
+          "Keyboard",
+          "Printer",
+          "Mouse",
+          "Scanner"
+        ],
+        "option_translations": [
+          "键盘",
+          "打印机",
+          "鼠标",
+          "扫描仪"
+        ],
+        "answer": "B",
+        "explanation": "打印机用于输出内容，属于输出设备；键盘、鼠标、扫描仪均为输入设备。",
+        "introduction": ""
+      },
+      {
+        "id": 5,
+        "type": "single",
+        "section": "一、单选题（共30题）",
+        "question": "Which of the following is a type of secondary storage? ( )",
+        "question_translation": "以下哪项属于外部存储设备？（）",
+        "options": [
+          "ROM",
+          "Hard Disk",
+          "RAM",
+          "Cache"
+        ],
+        "option_translations": [
+          "只读存储器",
+          "硬盘",
+          "随机存取存储器",
+          "高速缓存"
+        ],
+        "answer": "B",
+        "explanation": "硬盘是典型的外部辅助存储；ROM、RAM、Cache 都属于计算机主存范畴。",
+        "introduction": ""
+      },
+      {
+        "id": 6,
+        "type": "single",
+        "section": "一、单选题（共30题）",
+        "question": "The \"Control Unit\" of the CPU is responsible for ( ).",
+        "question_translation": "CPU 中的控制器负责（）。",
+        "options": [
+          "Controlling the flow of data and instructions",
+          "Performing arithmetic operations",
+          "Storing data temporarily",
+          "Displaying results"
+        ],
+        "option_translations": [
+          "控制数据与指令的流转",
+          "执行算术运算",
+          "临时存储数据",
+          "显示结果"
+        ],
+        "answer": "A",
+        "explanation": "控制器（CU）的核心作用是管控计算机内数据和指令的传输与执行流程。",
+        "introduction": ""
+      },
+      {
+        "id": 7,
+        "type": "single",
+        "section": "一、单选题（共30题）",
+        "question": "The speed of hard disk is usually measured in ( ).",
+        "question_translation": "硬盘的转速通常以（）为单位。",
+        "options": [
+          "GHz",
+          "MB",
+          "RPM",
+          "GB"
+        ],
+        "option_translations": [
+          "吉赫兹",
+          "兆字节",
+          "转 / 分钟",
+          "吉字节"
+        ],
+        "answer": "C",
+        "explanation": "RPM 代表转 / 分钟，是机械硬盘转速单位；GHz 是频率单位，MB、GB 是存储容量单位。",
+        "introduction": ""
+      },
+      {
+        "id": 8,
+        "type": "single",
+        "section": "一、单选题（共30题）",
+        "question": "The \"CPU\" consists of two main parts: ( ).",
+        "question_translation": "CPU 主要由两部分组成：（）。",
+        "options": [
+          "RAM and ROM",
+          "Motherboard and Power Supply",
+          "ALU and Control Unit",
+          "Hard Disk and Cache"
+        ],
+        "option_translations": [
+          "随机存取存储器和只读存储器",
+          "主板和电源",
+          "算术逻辑单元和控制器",
+          "硬盘和高速缓存"
+        ],
+        "answer": "C",
+        "explanation": "CPU 两大核心组件为算术逻辑单元（ALU）和控制器（Control Unit）。",
+        "introduction": ""
+      },
+      {
+        "id": 9,
+        "type": "single",
+        "section": "一、单选题（共30题）",
+        "question": "Cache memory is used to ( ).",
+        "question_translation": "高速缓存的作用是（）。",
+        "options": [
+          "Connect the computer to the Internet",
+          "Speed up the data exchange between CPU and RAM",
+          "Display images on the monitor",
+          "Store large amounts of data permanently"
+        ],
+        "option_translations": [
+          "将计算机连接至网络",
+          "加快 CPU 与内存之间的数据交换",
+          "在显示器上显示图像",
+          "永久存储大量数据"
+        ],
+        "answer": "B",
+        "explanation": "高速缓存读写速度极快，用于衔接 CPU 和内存，提升二者的数据交互效率。",
+        "introduction": ""
+      },
+      {
+        "id": 10,
+        "type": "single",
+        "section": "一、单选题（共30题）",
+        "question": "Which component is responsible for processing and executing instructions? ( )",
+        "question_translation": "哪个硬件负责处理并执行指令？（）",
+        "options": [
+          "Monitor",
+          "RAM",
+          "Hard Disk",
+          "CPU"
+        ],
+        "option_translations": [
+          "显示器",
+          "随机存取存储器",
+          "硬盘",
+          "中央处理器"
+        ],
+        "answer": "D",
+        "explanation": "CPU（中央处理器）是计算机的运算和控制核心，负责执行各类指令。",
+        "introduction": ""
+      },
+      {
+        "id": 11,
+        "type": "single",
+        "section": "一、单选题（共30题）",
+        "question": "Which component connects all other hardware components of a computer? ( )",
+        "question_translation": "哪个部件连接计算机所有其他硬件？（）",
+        "options": [
+          "Motherboard",
+          "Power Supply",
+          "Hard Disk",
+          "CPU"
+        ],
+        "option_translations": [
+          "主板",
+          "电源",
+          "硬盘",
+          "中央处理器"
+        ],
+        "answer": "A",
+        "explanation": "主板是计算机的载体，各类硬件设备都插接、连接在主板上。",
+        "introduction": ""
+      },
+      {
+        "id": 12,
+        "type": "single",
+        "section": "一、单选题（共30题）",
+        "question": "Which of the following is the main component that controls the operation of a computer? ( )",
+        "question_translation": "以下哪项是管控计算机运行的核心部件？（）",
+        "options": [
+          "Memory",
+          "Motherboard",
+          "CPU",
+          "Hard Disk"
+        ],
+        "option_translations": [
+          "存储器",
+          "主板",
+          "中央处理器",
+          "硬盘"
+        ],
+        "answer": "C",
+        "explanation": "CPU 统筹控制计算机整体运行，是整机的控制核心。",
+        "introduction": ""
+      },
+      {
+        "id": 13,
+        "type": "single",
+        "section": "一、单选题（共30题）",
+        "question": "Which component is not part of the CPU? ( )",
+        "question_translation": "哪个部件不属于 CPU 的组成部分？（）",
+        "options": [
+          "Control Unit",
+          "RAM",
+          "Cache",
+          "ALU"
+        ],
+        "option_translations": [
+          "控制器",
+          "随机存取存储器",
+          "高速缓存",
+          "算术逻辑单元"
+        ],
+        "answer": "B",
+        "explanation": "RAM 是独立的内存硬件，并不集成在 CPU 内部。",
+        "introduction": ""
+      },
+      {
+        "id": 14,
+        "type": "single",
+        "section": "一、单选题（共30题）",
+        "question": "What is the function of a graphics card (GPU)? ( )",
+        "question_translation": "显卡（GPU）的功能是什么？（）",
+        "options": [
+          "Store data permanently",
+          "Control the CPU speed",
+          "Provide power to the system",
+          "Process and render images and videos"
+        ],
+        "option_translations": [
+          "永久存储数据",
+          "控制 CPU 频率",
+          "为系统供电",
+          "处理并渲染图像与视频"
+        ],
+        "answer": "D",
+        "explanation": "显卡专门负责图像、视频的运算与画面渲染工作。",
+        "introduction": ""
+      },
+      {
+        "id": 15,
+        "type": "single",
+        "section": "一、单选题（共30题）",
+        "question": "What is the main function of RAM? ( )",
+        "question_translation": "内存（RAM）的主要功能是什么？（）",
+        "options": [
+          "Connect external devices",
+          "Display images on the monitor",
+          "Store data and instructions temporarily for the CPU to process",
+          "Store the operating system permanently"
+        ],
+        "option_translations": [
+          "连接外部设备",
+          "在显示器上显示图像",
+          "临时存放供 CPU 处理的数据和指令",
+          "永久存储操作系统"
+        ],
+        "answer": "C",
+        "explanation": "内存临时加载运行所需的数据和指令，供 CPU 调用处理。",
+        "introduction": ""
+      },
+      {
+        "id": 16,
+        "type": "single",
+        "section": "一、单选题（共30题）",
+        "question": "Which component is used to connect external devices to the computer? ( )",
+        "question_translation": "哪个部件用于将外部设备连接到计算机？（）",
+        "options": [
+          "RAM",
+          "Expansion Slot",
+          "Motherboard",
+          "CPU"
+        ],
+        "option_translations": [
+          "随机存取存储器",
+          "扩展插槽",
+          "主板",
+          "中央处理器"
+        ],
+        "answer": "B",
+        "explanation": "扩展插槽可外接各类拓展硬件与外部设备，实现设备拓展连接。",
+        "introduction": ""
+      },
+      {
+        "id": 17,
+        "type": "single",
+        "section": "一、单选题（共30题）",
+        "question": "The \"SSD\" is a type of ( ) that is faster than a traditional hard disk.",
+        "question_translation": "SSD 是一种（），速度比传统硬盘更快。",
+        "options": [
+          "Output Device",
+          "Storage Device",
+          "Memory",
+          "Input Device"
+        ],
+        "option_translations": [
+          "输出设备",
+          "存储设备",
+          "内存",
+          "输入设备"
+        ],
+        "answer": "B",
+        "explanation": "SSD 固态硬盘属于存储设备，读写速度优于传统机械硬盘。",
+        "introduction": ""
+      },
+      {
+        "id": 18,
+        "type": "single",
+        "section": "一、单选题（共30题）",
+        "question": "The abbreviation \"HDD\" stands for ( ).",
+        "question_translation": "缩写 “HDD” 的全称是（）。",
+        "options": [
+          "Hard Disk Drive",
+          "High Data Drive",
+          "Hard Data Drive",
+          "High Density Drive"
+        ],
+        "option_translations": [
+          "硬盘驱动器",
+          "高速数据驱动器",
+          "硬数据驱动器",
+          "高密度驱动器"
+        ],
+        "answer": "A",
+        "explanation": "HDD 是 Hard Disk Drive（硬盘驱动器）的标准缩写。",
+        "introduction": ""
+      },
+      {
+        "id": 19,
+        "type": "single",
+        "section": "一、单选题（共30题）",
+        "question": "The abbreviation \"ROM\" means that the memory is ( ).",
+        "question_translation": "缩写 “ROM” 表示该存储器是（）。",
+        "options": [
+          "Writable",
+          "Read-Only",
+          "Erasable",
+          "Volatile"
+        ],
+        "option_translations": [
+          "可写入的",
+          "只读的",
+          "可擦除的",
+          "易失性的"
+        ],
+        "answer": "B",
+        "explanation": "ROM 全称只读存储器，默认状态下仅支持读取数据。",
+        "introduction": ""
+      },
+      {
+        "id": 20,
+        "type": "single",
+        "section": "一、单选题（共30题）",
+        "question": "The \"bus\" in a computer is used to ( ).",
+        "question_translation": "计算机中的总线用于（）。",
+        "options": [
+          "Process instructions",
+          "Display information",
+          "Store data",
+          "Transfer data between components"
+        ],
+        "option_translations": [
+          "处理指令",
+          "展示信息",
+          "存储数据",
+          "在硬件部件之间传输数据"
+        ],
+        "answer": "D",
+        "explanation": "总线是计算机内部的数据传输通道，负责在各硬件间传递数据。",
+        "introduction": ""
+      },
+      {
+        "id": 21,
+        "type": "single",
+        "section": "一、单选题（共30题）",
+        "question": "The unit of measurement for CPU speed is ( ).",
+        "question_translation": "CPU 运行速度的计量单位是（）。",
+        "options": [
+          "MHz/GHz",
+          "KB",
+          "GB",
+          "MB"
+        ],
+        "option_translations": [
+          "兆赫兹 / 吉赫兹",
+          "千字节",
+          "吉字节",
+          "兆字节"
+        ],
+        "answer": "A",
+        "explanation": "MHz、GHz 是频率单位，用来标注 CPU 主频；KB、MB、GB 为容量单位。",
+        "introduction": ""
+      },
+      {
+        "id": 22,
+        "type": "single",
+        "section": "一、单选题（共30题）",
+        "question": "Which of the following is an input device? ( )",
+        "question_translation": "以下哪项是输入设备？（）",
+        "options": [
+          "Keyboard",
+          "Monitor",
+          "Speaker",
+          "Printer"
+        ],
+        "option_translations": [
+          "键盘",
+          "显示器",
+          "音箱",
+          "打印机"
+        ],
+        "answer": "A",
+        "explanation": "键盘向计算机输入指令与字符，属于输入设备；其余均为输出设备。",
+        "introduction": ""
+      },
+      {
+        "id": 23,
+        "type": "single",
+        "section": "一、单选题（共30题）",
+        "question": "Which input device is used to control the cursor on the screen? ( )",
+        "question_translation": "哪种输入设备用于控制屏幕光标？（）",
+        "options": [
+          "Printer",
+          "Mouse",
+          "Scanner",
+          "Keyboard"
+        ],
+        "option_translations": [
+          "打印机",
+          "鼠标",
+          "扫描仪",
+          "键盘"
+        ],
+        "answer": "B",
+        "explanation": "鼠标主要功能就是操控屏幕光标移动、选择操作对象。",
+        "introduction": ""
+      },
+      {
+        "id": 24,
+        "type": "single",
+        "section": "一、单选题（共30题）",
+        "question": "Which of the following is not storage device? ( )",
+        "question_translation": "以下哪项不属于存储设备？（）",
+        "options": [
+          "SSD",
+          "Hard Disk",
+          "USB Flash Drive U",
+          "RAM"
+        ],
+        "option_translations": [
+          "固态硬盘",
+          "硬盘",
+          "盘",
+          "随机存取存储器"
+        ],
+        "answer": "D",
+        "explanation": "RAM 是临时运行内存，不属于外部存储设备；固态硬盘、硬盘、U 盘均为存储设备。",
+        "introduction": ""
+      },
+      {
+        "id": 25,
+        "type": "single",
+        "section": "一、单选题（共30题）",
+        "question": "Which hardware component is used to store data permanently even when the computer is turned off? ( )",
+        "question_translation": "哪个硬件可在计算机关机后永久保存数据？（）",
+        "options": [
+          "ROM",
+          "RAM",
+          "Cache",
+          "Hard Drive"
+        ],
+        "option_translations": [
+          "只读存储器",
+          "随机存取存储器",
+          "高速缓存",
+          "硬盘"
+        ],
+        "answer": "D",
+        "explanation": "硬盘是主流的大容量永久存储设备；ROM 容量小，一般不用于常规数据存储。",
+        "introduction": ""
+      },
+      {
+        "id": 26,
+        "type": "single",
+        "section": "一、单选题（共30题）",
+        "question": "What does \"BIOS\" stand for? ( )",
+        "question_translation": "缩写 “BIOS” 的全称是什么？（）",
+        "options": [
+          "Basic Instruction/Operation System",
+          "Basic Input/Output System",
+          "Basic Input/Operation System",
+          "Basic Instruction/Output System"
+        ],
+        "option_translations": [
+          "基础指令操作系统",
+          "基本输入输出系统",
+          "基本输入操作系统",
+          "基础指令输出系统"
+        ],
+        "answer": "B",
+        "explanation": "BIOS 是 Basic Input/Output System（基本输入输出系统）的缩写。",
+        "introduction": ""
+      },
+      {
+        "id": 27,
+        "type": "single",
+        "section": "一、单选题（共30题）",
+        "question": "Which hardware component provides power for the entire computer system? ( )",
+        "question_translation": "哪个硬件为整个计算机系统供电？（）",
+        "options": [
+          "Hard Disk",
+          "Motherboard",
+          "CPU",
+          "Power Supply Unit (PSU)"
+        ],
+        "option_translations": [
+          "硬盘",
+          "主板",
+          "中央处理器",
+          "电源"
+        ],
+        "answer": "D",
+        "explanation": "电源（PSU）是计算机的供电单元，为所有硬件提供电力。",
+        "introduction": ""
+      },
+      {
+        "id": 28,
+        "type": "single",
+        "section": "一、单选题（共30题）",
+        "question": "Which device is used to scan physical documents into digital format? ( )",
+        "question_translation": "哪种设备可以将纸质文档扫描为电子格式？（）",
+        "options": [
+          "Monitor",
+          "Scanner",
+          "Speaker",
+          "Printer"
+        ],
+        "option_translations": [
+          "显示器",
+          "扫描仪",
+          "音箱",
+          "打印机"
+        ],
+        "answer": "B",
+        "explanation": "扫描仪的核心功能就是把纸质文件、图像转换为数字文件。",
+        "introduction": ""
+      },
+      {
+        "id": 29,
+        "type": "single",
+        "section": "一、单选题（共30题）",
+        "question": "What does \"ALU\" stand for? ( )",
+        "question_translation": "缩写 “ALU” 的全称是什么？（）",
+        "options": [
+          "Arithmetic Logic Unit",
+          "Advanced Logic Unit",
+          "Arithmetic Local Unit",
+          "Advanced Local Unit"
+        ],
+        "option_translations": [
+          "算术逻辑单元",
+          "高级逻辑单元",
+          "算术本地单元",
+          "高级本地单元"
+        ],
+        "answer": "A",
+        "explanation": "ALU 是 Arithmetic Logic Unit（算术逻辑单元），负责运算工作。",
+        "introduction": ""
+      },
+      {
+        "id": 30,
+        "type": "single",
+        "section": "一、单选题（共30题）",
+        "question": "The abbreviation \"RAM\" stands for ( ).",
+        "question_translation": "缩写 “RAM” 的全称是（）。",
+        "options": [
+          "Random Access Module",
+          "Read-Only Module",
+          "Read-Only Memory",
+          "Random Access Memory"
+        ],
+        "option_translations": [
+          "随机访问模块",
+          "只读模块",
+          "只读存储器",
+          "随机存取存储器"
+        ],
+        "answer": "D",
+        "explanation": "RAM 是 Random Access Memory（随机存取存储器），即内存。",
+        "introduction": ""
+      },
+      {
+        "id": 31,
+        "type": "multiple",
+        "section": "一、单选题（共30题）",
+        "question": "The motherboard connects the following components: ( )",
+        "question_translation": "主板连接以下哪些部件：（）",
+        "options": [
+          "CPU",
+          "Power Supply",
+          "Hard Disk",
+          "RAM"
+        ],
+        "option_translations": [
+          "中央处理器",
+          "电源",
+          "硬盘",
+          "随机存取存储器"
+        ],
+        "answer": "ACD",
+        "explanation": "CPU、硬盘、内存均直接连接主板；电源是独立供电部件，不依靠主板连接。",
+        "introduction": ""
+      },
+      {
+        "id": 32,
+        "type": "multiple",
+        "section": "一、单选题（共30题）",
+        "question": "Which of the following statements about ROM are correct? ( )",
+        "question_translation": "关于只读存储器（ROM），以下说法正确的是（）",
+        "options": [
+          "It can be rewritten easily",
+          "It stores the BIOS",
+          "It is read-only",
+          "It is non-volatile"
+        ],
+        "option_translations": [
+          "可轻松改写",
+          "存储基本输入输出系统",
+          "属于只读类型",
+          "属于非易失性存储"
+        ],
+        "answer": "BCD",
+        "explanation": "ROM 为只读、非易失性存储器，主板 BIOS 就存放在 ROM 中，它无法随意改写。",
+        "introduction": ""
+      },
+      {
+        "id": 33,
+        "type": "multiple",
+        "section": "一、单选题（共30题）",
+        "question": "Which of the following are functions of the power supply unit (PSU)? ( )",
+        "question_translation": "电源（PSU）的功能包括（）",
+        "options": [
+          "Control the flow of instructions",
+          "Provide stable power for all components",
+          "Convert AC power to DC power",
+          "Store data temporarily"
+        ],
+        "option_translations": [
+          "控制指令流转",
+          "为所有硬件提供稳定电力",
+          "将交流电转换为直流电",
+          "临时存储数据"
+        ],
+        "answer": "BC",
+        "explanation": "电源负责市电交直流转换，并为整机硬件提供稳定供电。",
+        "introduction": ""
+      },
+      {
+        "id": 34,
+        "type": "multiple",
+        "section": "一、单选题（共30题）",
+        "question": "Which of the following abbreviations are related to computer hardware? ( )",
+        "question_translation": "以下哪些缩写和计算机硬件相关？（）",
+        "options": [
+          "GPU",
+          "CPU",
+          "OS",
+          "RAM"
+        ],
+        "option_translations": [
+          "显卡",
+          "中央处理器",
+          "操作系统",
+          "随机存取存储器"
+        ],
+        "answer": "ABD",
+        "explanation": "GPU、CPU、RAM 均为硬件；OS（操作系统）属于软件。",
+        "introduction": ""
+      },
+      {
+        "id": 35,
+        "type": "multiple",
+        "section": "一、单选题（共30题）",
+        "question": "Which of the following are characteristics of SSD compared to HDD? ( )",
+        "question_translation": "对比机械硬盘（HDD），固态硬盘（SSD）具备哪些特点？（）",
+        "options": [
+          "Faster speed",
+          "Lower power consumption",
+          "No moving parts",
+          "Larger storage capacity (usually)"
+        ],
+        "option_translations": [
+          "速度更快",
+          "功耗更低",
+          "无机械运转部件",
+          "通常容量更大"
+        ],
+        "answer": "ABC",
+        "explanation": "SSD 读写快、功耗低、无机械结构；同价位下机械硬盘容量通常更大。",
+        "introduction": ""
+      },
+      {
+        "id": 36,
+        "type": "multiple",
+        "section": "一、单选题（共30题）",
+        "question": "Which of the following statements about RAM are correct? ( )",
+        "question_translation": "关于内存（RAM），以下说法正确的是（）",
+        "options": [
+          "It stores data permanently",
+          "It is volatile",
+          "It is read-only",
+          "It is used for temporary data storage"
+        ],
+        "option_translations": [
+          "永久存储数据",
+          "属于易失性存储",
+          "只读",
+          "用于临时存储数据"
+        ],
+        "answer": "BD",
+        "explanation": "RAM 是易失性内存，仅临时存放数据，断电数据丢失，可自由读写。",
+        "introduction": ""
+      },
+      {
+        "id": 37,
+        "type": "multiple",
+        "section": "一、单选题（共30题）",
+        "question": "Which of the following are input devices? ( )",
+        "question_translation": "以下哪些是输入设备？（）",
+        "options": [
+          "Printer",
+          "Mouse",
+          "Scanner",
+          "Keyboard"
+        ],
+        "option_translations": [
+          "打印机",
+          "鼠标",
+          "扫描仪",
+          "键盘"
+        ],
+        "answer": "BCD",
+        "explanation": "鼠标、扫描仪、键盘都向计算机输入信息，属于输入设备；打印机是输出设备。",
+        "introduction": ""
+      },
+      {
+        "id": 38,
+        "type": "multiple",
+        "section": "一、单选题（共30题）",
+        "question": "The CPU consists of the following parts: ( )",
+        "question_translation": "CPU 由以下哪些部分组成：（）",
+        "options": [
+          "Cache",
+          "ALU",
+          "Control Unit",
+          "RAM"
+        ],
+        "option_translations": [
+          "高速缓存",
+          "算术逻辑单元",
+          "控制器",
+          "随机存取存储器"
+        ],
+        "answer": "ABC",
+        "explanation": "CPU 集成高速缓存、算术逻辑单元、控制器；RAM 是独立硬件，不属于 CPU。",
+        "introduction": ""
+      },
+      {
+        "id": 39,
+        "type": "multiple",
+        "section": "一、单选题（共30题）",
+        "question": "Which of the following are output devices? ( )",
+        "question_translation": "以下哪些是输出设备？（）",
+        "options": [
+          "Printer",
+          "Speaker",
+          "Monitor",
+          "Mouse"
+        ],
+        "option_translations": [
+          "打印机",
+          "音箱",
+          "显示器",
+          "鼠标"
+        ],
+        "answer": "ABC",
+        "explanation": "打印机、音箱、显示器用于向外输出内容，属于输出设备；鼠标是输入设备。",
+        "introduction": ""
+      },
+      {
+        "id": 40,
+        "type": "multiple",
+        "section": "一、单选题（共30题）",
+        "question": "Which of the following are storage devices? ( )",
+        "question_translation": "以下哪些是存储设备？（）",
+        "options": [
+          "SSD",
+          "USB Flash Drive U",
+          "Hard Disk",
+          "RAM"
+        ],
+        "option_translations": [
+          "固态硬盘",
+          "盘",
+          "硬盘",
+          "随机存取存储器"
+        ],
+        "answer": "ABC",
+        "explanation": "固态硬盘、U 盘、硬盘属于外部存储设备；RAM 是运行内存，不属于存储设备。",
+        "introduction": ""
+      },
+      {
+        "id": 41,
+        "type": "translation",
+        "section": "一、单选题（共30题）",
+        "question": "The motherboard is the main circuit board of a computer, which connects the CPU, memory, storage devices, and other peripheral components, enabling them to communicate and work together.",
+        "question_translation": "主板是计算机的主要电路板，它连接着中央处理器 (CPU)、内存、存储设备以及其他外围组件，使它们能够进行通信并协同工作。",
+        "options": [],
+        "option_translations": [],
+        "answer": "",
+        "explanation": "",
+        "introduction": ""
+      },
+      {
+        "id": 42,
+        "type": "translation",
+        "section": "一、单选题（共30题）",
+        "question": "Cache memory is a high-speed memory located between the CPU and RAM, which is used to store frequently accessed data and instructions to improve the overall performance of the computer.",
+        "question_translation": "高速缓冲存储器 (Cache) 是位于中央处理器 (CPU) 和随机存取存储器 (RAM) 之间的一种高速存储器，用于存储频繁访问的数据和指令，以提高计算机的整体性能。",
+        "options": [],
+        "option_translations": [],
+        "answer": "",
+        "explanation": "",
+        "introduction": ""
+      }
+    ]
+  },
+  {
     "title": "计算机专业英语CPU习题（原题+翻译+释义+答案+解析）",
     "filename": "计算机专业英语CPU习题第二次作业（原题+翻译+释义+答案+解析）.docx",
     "question_count": 52,
