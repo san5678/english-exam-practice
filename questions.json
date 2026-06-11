@@ -3048,7 +3048,7 @@
   {
     "title": "计算机英语练习题（I/O 设备专题・含翻译 + 解析）",
     "filename": "计算机英语练习题第四次作业（I_O 设备专题・含翻译 + 解析）.docx",
-    "question_count": 40,
+    "question_count": 44,
     "questions": [
       {
         "id": 1,
@@ -3824,16 +3824,16 @@
         "id": 36,
         "question": "What does I/O stand for in the passage?",
         "options": [
-          "Internal/External（内部/外部）",
-          "Input/Output（输入/输出）",
-          "Input/Operation（输入/操作）",
-          "Instruction/Output（指令/输出）"
-        ],
-        "option_translations": [
           "Internal/External",
           "Input/Output",
           "Input/Operation",
           "Instruction/Output"
+        ],
+        "option_translations": [
+          "内部/外部",
+          "输入/输出",
+          "输入/操作",
+          "指令/输出"
         ],
         "question_translation": "在这段文字中，I/O代表什么？",
         "answer": "B",
@@ -3846,16 +3846,16 @@
         "id": 37,
         "question": "Which of the following is NOT an input device mentioned in the passage?",
         "options": [
-          "Scanner（扫描仪）",
-          "Microphone（麦克风）",
-          "Monitor（显示器）",
-          "Keyboard（键盘）"
-        ],
-        "option_translations": [
           "Scanner",
           "Microphone",
           "Monitor",
           "Keyboard"
+        ],
+        "option_translations": [
+          "扫描仪",
+          "麦克风",
+          "显示器",
+          "键盘"
         ],
         "question_translation": "以下哪一项不是文中提到的输入设备？",
         "answer": "C",
@@ -3868,16 +3868,16 @@
         "id": 38,
         "question": "Which device is an example of both input and output according to the passage?",
         "options": [
-          "Mouse（鼠标）",
-          "Touch screen（触摸屏）",
-          "Printer（打印机）",
-          "Speaker（扬声器）"
-        ],
-        "option_translations": [
           "Mouse",
           "Touch screen",
           "Printer",
           "Speaker"
+        ],
+        "option_translations": [
+          "鼠标",
+          "触摸屏",
+          "打印机",
+          "扬声器"
         ],
         "question_translation": "根据文章，哪个设备既是输入设备又是输出设备？",
         "answer": "B",
@@ -3890,16 +3890,16 @@
         "id": 39,
         "question": "What is the function of output devices?",
         "options": [
-          "Show processed data to users（向用户展示处理后的数据）",
-          "Send data to the computer（向计算机发送数据）",
-          "Read printed text into computers（将印刷文本读取到计算机中）",
-          "Store data for a long time（长期存储数据）"
-        ],
-        "option_translations": [
           "Show processed data to users",
           "Send data to the computer",
           "Read printed text into computers",
           "Store data for a long time"
+        ],
+        "option_translations": [
+          "向用户展示处理后的数据",
+          "向计算机发送数据",
+          "将印刷文本读取到计算机中",
+          "长期存储数据"
         ],
         "question_translation": "输出设备的功能是什么？",
         "answer": "A",
@@ -3912,16 +3912,16 @@
         "id": 40,
         "question": "Why are I/O devices essential for computer systems?",
         "options": [
-          "They can store a large amount of data（它们可以存储大量数据）",
-          "They process data quickly（它们处理数据速度快）",
-          "They are easy to operate（它们操作简单）",
-          "They connect users and computer systems（它们连接用户与计算机系统）"
-        ],
-        "option_translations": [
           "They can store a large amount of data",
           "They process data quickly",
           "They are easy to operate",
           "They connect users and computer systems"
+        ],
+        "option_translations": [
+          "它们可以存储大量数据",
+          "它们处理数据速度快",
+          "它们操作简单",
+          "它们连接用户与计算机系统"
         ],
         "question_translation": "为什么输入/输出设备对计算机系统至关重要？",
         "answer": "D",
@@ -3929,6 +3929,54 @@
         "introduction": "阅读理解题",
         "section": "四. 阅读理解",
         "type": "reading"
+      },
+      {
+        "id": 41,
+        "type": "translation",
+        "section": "三、简答题",
+        "question": "英译汉: Output devices display or present processed information to users.",
+        "question_translation": "输出设备向用户显示或呈现处理后的信息。",
+        "options": [],
+        "option_translations": [],
+        "answer": "",
+        "explanation": "",
+        "introduction": ""
+      },
+      {
+        "id": 42,
+        "type": "translation",
+        "section": "三、简答题",
+        "question": "英译汉: Input devices are used to send data and instructions to the computer.",
+        "question_translation": "输入设备用于向计算机发送数据和指令。",
+        "options": [],
+        "option_translations": [],
+        "answer": "",
+        "explanation": "",
+        "introduction": ""
+      },
+      {
+        "id": 43,
+        "type": "translation",
+        "section": "三、简答题",
+        "question": "汉译英: I/O 设备实现了用户与计算机系统之间的通信。",
+        "question_translation": "I/O devices enable communication between users and the computer system.",
+        "options": [],
+        "option_translations": [],
+        "answer": "",
+        "explanation": "",
+        "introduction": ""
+      },
+      {
+        "id": 44,
+        "type": "translation",
+        "section": "三、简答题",
+        "question": "汉译英: 触摸屏可以同时检测触摸输入并显示输出内容。",
+        "question_translation": "A touch screen can detect touch input and display output content at the same time.",
+        "options": [],
+        "option_translations": [],
+        "answer": "",
+        "explanation": "",
+        "introduction": ""
       }
     ],
     "id": 4
@@ -5069,16 +5117,16 @@
         "question": "Which of the following statements about linked lists is NOT correct? (        )",
         "question_translation": "下列关于链表的叙述，错误的是哪一项？",
         "options": [
-          "Linked lists store elements in non-contiguous memory locations.（链表在非连续内存空间存储元素）",
-          "A doubly linked list allows traversal in both directions.（双向链表支持双向遍历）",
-          "Insertion and deletion in linked lists are more efficient than in arrays in most cases.（多数情况下链表增删效率高于数组）",
-          "Linked lists support random access to elements, same as arrays.（链表和数组一样支持元素随机访问）"
+          "Linked lists store elements in non-contiguous memory locations.",
+          "A doubly linked list allows traversal in both directions.",
+          "Insertion and deletion in linked lists are more efficient than in arrays in most cases.",
+          "Linked lists support random access to elements, same as arrays."
         ],
         "option_translations": [
-          "非连续内存存储",
-          "双向遍历",
-          "增删高效",
-          "随机访问"
+          "链表在非连续内存空间存储元素",
+          "双向链表支持双向遍历",
+          "多数情况下链表增删效率高于数组",
+          "链表和数组一样支持元素随机访问"
         ],
         "answer": "D",
         "explanation": "链表不支持随机访问，需从头结点依次遍历才能找到目标元素；而数组支持通过索引直接随机访问，其余选项均为链表的正确特性，故选D。",
@@ -5091,16 +5139,16 @@
         "question": "What is the main difference between linked lists and arrays in terms of memory storage? (        )",
         "question_translation": "链表和数组在内存存储方面的主要区别是什么？",
         "options": [
-          "Linked lists store elements in contiguous memory, while arrays do not.（链表存储连续内存，数组反之）",
-          "Neither linked lists nor arrays store elements in contiguous memory.（链表和数组均不存储在连续内存）",
-          "Both linked lists and arrays store elements in contiguous memory.（链表和数组均存储在连续内存）",
-          "Arrays store elements in contiguous memory, while linked lists do not.（数组存储在连续内存，链表不是）"
+          "Linked lists store elements in contiguous memory, while arrays do not.",
+          "Neither linked lists nor arrays store elements in contiguous memory.",
+          "Both linked lists and arrays store elements in contiguous memory.",
+          "Arrays store elements in contiguous memory, while linked lists do not."
         ],
         "option_translations": [
-          "链表连续数组不连续",
-          "均不连续",
-          "均连续",
-          "数组连续链表不连续"
+          "链表存储连续内存，数组反之",
+          "链表和数组均不存储在连续内存",
+          "链表和数组均存储在连续内存",
+          "数组存储在连续内存，链表反之"
         ],
         "answer": "D",
         "explanation": "数组的元素存储在连续的内存地址中，可通过索引直接定位；链表的结点存储在非连续内存中，通过指针连接，这是两者在内存存储上的核心区别，故选D。",
@@ -5113,10 +5161,10 @@
         "question": "Which type of linked list allows traversal in two directions? ( )",
         "question_translation": "哪种链表可以双向遍历？",
         "options": [
-          "Doubly linked list（双向链表）",
-          "All types of linked lists（所有类型的链表）",
-          "Singly linked list（单向链表）",
-          "Circular linked list（循环链表）"
+          "Doubly linked list",
+          "All types of linked lists",
+          "Singly linked list",
+          "Circular linked list"
         ],
         "option_translations": [
           "双向链表",
@@ -5135,16 +5183,16 @@
         "question": "Why do linked lists have higher memory overhead than arrays? ( )",
         "question_translation": "为什么链表比数组的内存开销更大？",
         "options": [
-          "Because linked lists have dynamic size.（因为链表大小动态可变）",
-          "Because each node of linked lists needs to store a pointer besides data.（因为链表每个结点除数据外还要存指针）",
-          "Because linked lists do not support random access.（因为链表不支持随机访问）",
-          "Because linked lists need to store more data elements.（因为链表需要存储更多数据元素）"
+          "Because linked lists have dynamic size.",
+          "Because each node of linked lists needs to store a pointer besides data.",
+          "Because linked lists do not support random access.",
+          "Because linked lists need to store more data elements."
         ],
         "option_translations": [
-          "大小动态可变",
-          "结点需存指针",
-          "不支持随机访问",
-          "存储更多数据元素"
+          "因为链表大小动态可变",
+          "因为链表每个结点除数据外还要存指针",
+          "因为链表不支持随机访问",
+          "因为链表需要存储更多数据元素"
         ],
         "answer": "B",
         "explanation": "链表的每个结点除了存储数据（数据域），还需要存储指针（指针域）来连接相邻结点，额外的指针占用了更多内存；A（动态大小）是优点，不影响内存开销，C（不支持随机访问）是访问特性，D（存储更多元素）与内存开销无关，故选B。",
@@ -5157,10 +5205,10 @@
         "question": "Which of the following is NOT an application of linked lists? ( )",
         "question_translation": "下列哪一项不是链表的应用？",
         "options": [
-          "Dynamic data collections（动态数据集合）",
-          "Text editors（文本编辑器）",
-          "Random access to elements（元素随机访问）",
-          "Implementing stacks and queues（实现栈和队列）"
+          "Dynamic data collections",
+          "Text editors",
+          "Random access to elements",
+          "Implementing stacks and queues"
         ],
         "option_translations": [
           "动态数据集合",
@@ -8980,19 +9028,19 @@
         "explanation": "",
         "introduction": "",
         "section": "三、判断题（51–60）",
-        "type": "single"
+        "type": "translation"
       },
       {
         "id": 62,
         "question": "Dynamic programming is an optimization method that solves complex problems by breaking them into overlapping subproblems and storing their optimal solutions.",
-        "question_translation": "动态规划是一种优化算法思想，它将复杂问题拆解为重叠子问题，并保存各个子问题的最优解，从而求解原复杂问题。#选项也要翻译计算机的名词，其他不变生成word",
+        "question_translation": "动态规划是一种优化算法思想，它将复杂问题拆解为重叠子问题，并保存各个子问题的最优解，从而求解原复杂问题。",
         "options": [],
         "option_translations": [],
         "answer": "",
         "explanation": "",
         "introduction": "",
         "section": "三、判断题（51–60）",
-        "type": "single"
+        "type": "translation"
       }
     ],
     "id": 8
@@ -10049,22 +10097,18 @@
         "question": "Job queue stores the finished jobs. (        )",
         "options": [
           "对",
-          "错",
-          "Computer hardware",
-          "Keyboard usage"
+          "错"
         ],
         "option_translations": [
           "",
-          "",
-          "计算机硬件",
-          "键盘使用"
+          ""
         ],
-        "question_translation": "人们可以为专用设备做什么？",
+        "question_translation": "作业队列存放已完成的作业。",
         "answer": "B",
-        "explanation": "针对专用设备，人们可以设计或修改适配的操作系统。",
+        "explanation": "作业队列仅存放等待执行的作业，不存放已完成作业。",
         "introduction": "",
         "section": "一、单选题",
-        "type": "single"
+        "type": "judge"
       },
       {
         "id": 51,
@@ -10097,10 +10141,10 @@
         "question": "What is the passage mainly about? ( )",
         "question_translation": "这篇文章主要讲的是什么？",
         "options": [
-          "Computer hardware（计算机硬件）",
-          "Keyboard usage（键盘使用）",
-          "Operating system（操作系统）",
-          "Computer games（电脑游戏）"
+          "Computer hardware",
+          "Keyboard usage",
+          "Operating system",
+          "Computer games"
         ],
         "option_translations": [
           "计算机硬件",
@@ -10119,10 +10163,10 @@
         "question": "What is the main job of an OS? ( )",
         "question_translation": "操作系统的主要工作是什么？",
         "options": [
-          "Resource management（资源管理）",
-          "Printing files（打印文件）",
-          "Playing music（播放音乐）",
-          "Watching videos（观看视频）"
+          "Resource management",
+          "Printing files",
+          "Playing music",
+          "Watching videos"
         ],
         "option_translations": [
           "资源管理",
@@ -10141,10 +10185,10 @@
         "question": "Which of the following is not mentioned as a computer resource? ( )",
         "question_translation": "以下哪项不属于计算机资源？",
         "options": [
-          "CPU time（CPU时间）",
-          "Paper（纸张）",
-          "I/O devices（输入输出设备）",
-          "Memory space（内存空间）"
+          "CPU time",
+          "Paper",
+          "I/O devices",
+          "Memory space"
         ],
         "option_translations": [
           "CPU时间",
@@ -10163,10 +10207,10 @@
         "question": "Which statement is true about modern OS? ( )",
         "question_translation": "关于现代操作系统说法正确的是？",
         "options": [
-          "They are multitasking（支持多任务）",
-          "They are single-tasking（仅支持单任务）",
-          "They have no job queue（没有作业队列）",
-          "They cannot run processes together（无法同时运行进程）"
+          "They are multitasking",
+          "They are single-tasking",
+          "They have no job queue",
+          "They cannot run processes together"
         ],
         "option_translations": [
           "支持多任务",
@@ -10185,10 +10229,10 @@
         "question": "What can people do for special-purpose equipment? ( )",
         "question_translation": "人们可以为专用设备做什么？",
         "options": [
-          "Destroy hardware（损坏硬件）",
-          "Design or modify OS（设计或修改操作系统）",
-          "Change CPU randomly（随意更换中央处理器）",
-          "Delete all software（删除所有软件）"
+          "Destroy hardware",
+          "Design or modify OS",
+          "Change CPU randomly",
+          "Delete all software"
         ],
         "option_translations": [
           "损坏硬件",
