@@ -1347,8 +1347,8 @@ footer {
     <input id="auth-password-input" type="password" placeholder="密码" autocomplete="current-password" />
     <div class="auth-error" id="auth-error"></div>
     <div class="auth-actions">
-      <button class="confirm-btn" id="auth-submit-btn" onclick="doLogin()">登录</button>
-      <span class="toggle-btn" onclick="doRegister()">注册</span>
+      <button class="confirm-btn" id="auth-submit-btn" onclick="submitAuth()">登录</button>
+      <span class="toggle-btn" id="auth-toggle" onclick="toggleAuthMode()">去注册</span>
     </div>
     <button class="toggle-btn" onclick="closeAuthModal()" style="width:100%;margin-top:8px">取消</button>
   </div>
@@ -2110,6 +2110,7 @@ function showToast(msg, type) {
 
 let currentUser = null;
 let isErrorBookPractice = false;
+let authMode = 'login';
 
 async function checkAuth() {
   try {
@@ -2139,12 +2140,36 @@ function updateAuthUI() {
   }
 }
 
-function showAuthModal() {
+function showAuthModal(mode) {
+  authMode = mode || 'login';
   document.getElementById('auth-modal').style.display = '';
   document.getElementById('auth-username-input').value = '';
   document.getElementById('auth-password-input').value = '';
   document.getElementById('auth-error').textContent = '';
+  updateAuthModeUI();
   document.getElementById('auth-username-input').focus();
+}
+
+function toggleAuthMode() {
+  authMode = authMode === 'login' ? 'register' : 'login';
+  document.getElementById('auth-error').textContent = '';
+  updateAuthModeUI();
+}
+
+function updateAuthModeUI() {
+  const isLogin = authMode === 'login';
+  document.getElementById('auth-modal-title').textContent = isLogin ? '登录' : '注册';
+  document.getElementById('auth-submit-btn').textContent = isLogin ? '登录' : '注册';
+  document.getElementById('auth-toggle').textContent = isLogin ? '去注册' : '去登录';
+  document.getElementById('auth-password-input').autocomplete = isLogin ? 'current-password' : 'new-password';
+}
+
+function submitAuth() {
+  if (authMode === 'login') {
+    doLogin();
+  } else {
+    doRegister();
+  }
 }
 
 function closeAuthModal() {

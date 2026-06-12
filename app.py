@@ -10,7 +10,7 @@ from db import get_db, init_db
 sys.stdout.reconfigure(encoding='utf-8')
 
 app = Flask(__name__)
-app.secret_key = os.environ.get('SECRET_KEY', os.urandom(24).hex())
+app.secret_key = os.environ.get('SECRET_KEY', 'english-exam-practice-dev-key-2024')
 
 init_db()
 
