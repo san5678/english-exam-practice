@@ -27,6 +27,83 @@
   --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
 }
 
+[data-theme="dark"] {
+  --bg: #1a1a2e;
+  --card-bg: #16213e;
+  --text: #eaeaea;
+  --text-secondary: #9ca3af;
+  --border: #374151;
+  --accent: #60a5fa;
+  --accent-light: #93c5fd;
+  --success: #34d399;
+  --success-bg: #064e3b;
+  --error: #f87171;
+  --error-bg: #7f1d1d;
+  --gold: #fbbf24;
+  --gold-light: #78350f;
+  --multi-accent: #c084fc;
+  --multi-bg: #3b0764;
+  --shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+[data-theme="dark"] .option { background: #1e293b; border-color: #334155; }
+[data-theme="dark"] .option:hover { background: #334155; border-color: #475569; }
+[data-theme="dark"] .option.selected { background: #1e3a5f; border-color: #60a5fa; }
+[data-theme="dark"] .option.multi-selected { background: #3b0764; border-color: #c084fc; }
+[data-theme="dark"] .option.correct { background: #064e3b; border-color: #34d399; }
+[data-theme="dark"] .option.partial-correct { background: #78350f; border-color: #fbbf24; }
+[data-theme="dark"] .option.incorrect { background: #7f1d1d; border-color: #f87171; }
+[data-theme="dark"] .option-letter { background: #0f172a; border-color: #334155; color: #e2e8f0; }
+[data-theme="dark"] .option.selected .option-letter { background: #60a5fa; color: #fff; }
+[data-theme="dark"] .option.multi-selected .option-letter { background: #c084fc; color: #fff; }
+[data-theme="dark"] .option.correct .option-letter { background: #34d399; color: #fff; }
+[data-theme="dark"] .option.partial-correct .option-letter { background: #fbbf24; color: #fff; }
+[data-theme="dark"] .option.incorrect .option-letter { background: #f87171; color: #fff; }
+
+[data-theme="dark"] input[type="text"],
+[data-theme="dark"] input[type="password"],
+[data-theme="dark"] input[type="number"],
+[data-theme="dark"] textarea,
+[data-theme="dark"] select {
+  background: #0f172a;
+  color: #e2e8f0;
+  border-color: #334155;
+}
+[data-theme="dark"] input:focus,
+[data-theme="dark"] textarea:focus,
+[data-theme="dark"] select:focus {
+  border-color: #60a5fa;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(96,165,250,0.2);
+}
+
+[data-theme="dark"] .modal-overlay { background: rgba(0,0,0,0.7); }
+[data-theme="dark"] .modal-card { background: #1e293b; border-color: #334155; }
+[data-theme="dark"] .modal-card h3 { color: #f1f5f9; }
+[data-theme="dark"] .modal-card p { color: #94a3b8; }
+[data-theme="dark"] .modal-close { color: #94a3b8; }
+[data-theme="dark"] .modal-close:hover { color: #f1f5f9; }
+
+[data-theme="dark"] .exam-title-bar { background: #1e293b; border-color: #334155; }
+[data-theme="dark"] .practice-header { background: #1e293b; border-color: #334155; }
+[data-theme="dark"] .score-bar { background: #1e293b; border-color: #334155; }
+[data-theme="dark"] .source-tag { background: #1e293b; border-color: #334155; color: #93c5fd; }
+[data-theme="dark"] .source-tag span { color: #60a5fa; }
+[data-theme="dark"] .correct-label { background: #064e3b; color: #34d399; }
+[data-theme="dark"] .incorrect-label { background: #7f1d1d; color: #f87171; }
+[data-theme="dark"] .partial-label { background: #78350f; color: #fbbf24; }
+
+[data-theme="dark"] .eb-question-item { background: #1e293b; border-color: #334155; }
+[data-theme="dark"] .eb-source-item { background: #0f172a; border-color: #334155; }
+[data-theme="dark"] .eb-stat { background: #0f172a; border-color: #334155; }
+
+[data-theme="dark"] .random-card { background: #1e293b; border-color: #334155; }
+[data-theme="dark"] .random-card h3 { color: #f1f5f9; }
+
+[data-theme="dark"] header { background: #0f172a; border-color: #1e293b; }
+[data-theme="dark"] header h1 { color: #f1f5f9; }
+[data-theme="dark"] .auth-area .toggle-btn { color: #93c5fd; }
+
 body {
   font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
   background: var(--bg);
@@ -74,6 +151,24 @@ header h1 {
   background-position: right 10px center;
   max-width: 400px;
   text-overflow: ellipsis;
+}
+
+.btn-theme {
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--text);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transition: background 0.2s, color 0.2s;
+}
+.btn-theme:hover {
+  background: var(--border);
 }
 
 main {
@@ -134,20 +229,20 @@ main {
 
 /* 考试模式 */
 .toggle-btn.exam-mode {
-  background: #fef2f2;
-  border-color: #fca5a5;
-  color: #b91c1c;
+  background: var(--error-bg);
+  border-color: var(--error);
+  color: var(--error);
 }
 
 .toggle-btn.exam-mode.active {
-  background: #b91c1c;
+  background: var(--error);
   color: #fff;
-  border-color: #b91c1c;
+  border-color: var(--error);
 }
 
 .intro-card {
   background: var(--gold-light);
-  border: 1px solid #fde68a;
+  border: 1px solid var(--gold);
   border-radius: var(--radius);
   padding: 16px 20px;
   margin-bottom: 16px;
@@ -227,14 +322,14 @@ main {
   user-select: none;
 }
 
-.option:hover { border-color: var(--accent-light); background: #fafafa; }
+.option:hover { border-color: var(--accent-light); background: var(--card-bg); }
 .option.multi-mode:hover { border-color: var(--multi-accent); background: var(--multi-bg); }
 
-.option.selected { border-color: var(--accent); background: #f8fafc; }
+.option.selected { border-color: var(--accent); background: var(--card-bg); }
 .option.multi-selected { border-color: var(--multi-accent); background: var(--multi-bg); }
 
 .option.correct { border-color: var(--success); background: var(--success-bg); }
-.option.partial-correct { border-color: #d97706; background: #fffbeb; }
+.option.partial-correct { border-color: var(--gold); background: var(--gold-light); }
 .option.incorrect { border-color: var(--error); background: var(--error-bg); }
 
 .option-letter {
@@ -250,7 +345,7 @@ main {
 .option.selected .option-letter { background: var(--accent); color: #fff; border-color: var(--accent); }
 .option.multi-selected .option-letter { background: var(--multi-accent); color: #fff; border-color: var(--multi-accent); }
 .option.correct .option-letter { background: var(--success); color: #fff; border-color: var(--success); }
-.option.partial-correct .option-letter { background: #d97706; color: #fff; border-color: #d97706; }
+.option.partial-correct .option-letter { background: var(--gold); color: #fff; border-color: var(--gold); }
 .option.incorrect .option-letter { background: var(--error); color: #fff; border-color: var(--error); }
 
 .option-content { flex: 1; }
@@ -266,7 +361,7 @@ main {
 
 .option.correct .check-icon.correct-check { display: inline; color: var(--success); }
 .option.incorrect .check-icon.wrong-check { display: inline; color: var(--error); }
-.option.partial-correct .check-icon.correct-check { display: inline; color: #d97706; }
+.option.partial-correct .check-icon.correct-check { display: inline; color: var(--gold); }
 
 .confirm-bar {
   display: flex; align-items: center; gap: 12px; margin-top: 12px;
@@ -304,9 +399,9 @@ main {
 }
 
 .explanation-box.visible { display: block; }
-.explanation-box.correct-explain { background: var(--success-bg); border: 1px solid #bbf7d0; }
-.explanation-box.partial-explain { background: #fffbeb; border: 1px solid #fde68a; }
-.explanation-box.incorrect-explain { background: var(--error-bg); border: 1px solid #fecaca; }
+.explanation-box.correct-explain { background: var(--success-bg); border: 1px solid var(--success); }
+.explanation-box.partial-explain { background: var(--gold-light); border: 1px solid var(--gold); }
+.explanation-box.incorrect-explain { background: var(--error-bg); border: 1px solid var(--error); }
 
 .explanation-label {
   font-weight: 600; font-size: 12px; text-transform: uppercase;
@@ -517,7 +612,7 @@ footer {
   padding: 16px 18px;
   border-radius: 10px;
   background: var(--gold-light);
-  border: 1px solid #fde68a;
+  border: 1px solid var(--gold);
 }
 
 .translation-answer-label {
@@ -599,7 +694,7 @@ footer {
   flex-shrink: 0;
 }
 .legend-dot.correct { background: var(--success); border-color: var(--success); }
-.legend-dot.partial { background: #d97706; border-color: #d97706; }
+.legend-dot.partial { background: var(--gold); border-color: var(--gold); }
 .legend-dot.incorrect { background: var(--error); border-color: var(--error); }
 .legend-dot.answered { background: var(--accent); border-color: var(--accent); }
 .legend-dot.unanswered { background: #f1f5f9; border-color: #e2e8f0; }
@@ -644,14 +739,14 @@ footer {
 }
 
 .answer-cell.partial {
-  background: #fffbeb;
-  border-color: #fde68a;
-  color: #d97706;
+  background: var(--gold-light);
+  border-color: var(--gold);
+  color: var(--gold);
 }
 
 .answer-cell.incorrect {
   background: var(--error-bg);
-  border-color: #fca5a5;
+  border-color: var(--error);
   color: var(--error);
 }
 
@@ -692,11 +787,11 @@ footer {
   margin-left: 4px;
 }
 
-.score-badge.grade-A { background: #f0fdf4; border-color: #86efac; color: #15803d; }
-.score-badge.grade-B { background: #eff6ff; border-color: #93c5fd; color: #1d4ed8; }
-.score-badge.grade-C { background: #fefce8; border-color: #fde68a; color: #a16207; }
-.score-badge.grade-D { background: #fff7ed; border-color: #fdba74; color: #c2410c; }
-.score-badge.grade-F { background: #fef2f2; border-color: #fca5a5; color: #b91c1c; }
+.score-badge.grade-A { background: var(--success-bg); border-color: var(--success); color: var(--success); }
+.score-badge.grade-B { background: #1e3a5f; border-color: var(--accent); color: var(--accent); }
+.score-badge.grade-C { background: var(--gold-light); border-color: var(--gold); color: var(--gold); }
+.score-badge.grade-D { background: #7c2d12; border-color: #fb923c; color: #fb923c; }
+.score-badge.grade-F { background: var(--error-bg); border-color: var(--error); color: var(--error); }
 
 .submit-score-btn {
   padding: 6px 16px;
@@ -757,11 +852,11 @@ footer {
   line-height: 1;
 }
 
-.score-item .num.grade-A { color: #15803d; }
-.score-item .num.grade-B { color: #1d4ed8; }
-.score-item .num.grade-C { color: #a16207; }
-.score-item .num.grade-D { color: #c2410c; }
-.score-item .num.grade-F { color: #b91c1c; }
+.score-item .num.grade-A { color: var(--success); }
+.score-item .num.grade-B { color: var(--accent); }
+.score-item .num.grade-C { color: var(--gold); }
+.score-item .num.grade-D { color: #fb923c; }
+.score-item .num.grade-F { color: var(--error); }
 
 .score-item .label {
   font-size: 11px;
@@ -811,7 +906,7 @@ footer {
 }
 
 .score-detail-table .correct { color: var(--success); }
-.score-detail-table .partial { color: #d97706; }
+.score-detail-table .partial { color: var(--gold); }
 .score-detail-table .incorrect { color: var(--error); }
 .score-detail-table .unanswered { color: var(--text-secondary); }
 
@@ -903,6 +998,221 @@ footer {
   accent-color: var(--accent);
 }
 
+.auth-area {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.auth-area .username-text {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 28px 24px;
+  width: 340px;
+  max-width: 90vw;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+}
+
+.modal-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.modal-card input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.modal-card input:focus {
+  border-color: var(--accent);
+}
+
+.modal-card .auth-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.modal-card .auth-actions button {
+  flex: 1;
+}
+
+.modal-card .auth-error {
+  font-size: 13px;
+  color: var(--error);
+  margin-top: 6px;
+  min-height: 18px;
+}
+
+.btn-error-book {
+  padding: 6px 14px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  font-size: 12px;
+  background: var(--card-bg);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+
+.btn-error-book:hover { border-color: var(--accent); }
+.btn-error-book.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+.error-book-panel {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow);
+  display: none;
+}
+
+.error-book-panel.visible { display: block; }
+
+.error-book-panel h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.eb-stats {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.eb-stat {
+  padding: 8px 14px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.eb-stat span { font-weight: 600; color: var(--accent); }
+
+.eb-source-list {
+  margin-bottom: 16px;
+}
+
+.eb-source-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 0;
+  font-size: 13px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.eb-source-item:last-child { border-bottom: none; }
+
+.eb-source-count {
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.eb-question-list {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 16px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.eb-question-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  font-size: 12px;
+  border-bottom: 1px solid #f1f5f9;
+  cursor: default;
+}
+
+.eb-question-item:last-child { border-bottom: none; }
+
+.eb-mastered {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 10px;
+  background: var(--success-bg);
+  color: var(--success);
+  border: 1px solid #bbf7d0;
+}
+
+.eb-not-mastered {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 10px;
+  background: var(--error-bg);
+  color: var(--error);
+  border: 1px solid #fecaca;
+}
+
+.eb-practice-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.eb-practice-bar input[type="range"] {
+  flex: 1;
+  min-width: 100px;
+  accent-color: var(--accent);
+}
+
+.error-practice-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  background: #fef3c7;
+  color: #92400e;
+  margin-left: 8px;
+}
+
+.error-practice-source {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-size: 10px;
+  background: var(--error-bg);
+  color: var(--error);
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
 @media (max-width: 640px) {
   header { padding: 0 12px; }
   header h1 { font-size: 15px; }
@@ -923,6 +1233,12 @@ footer {
     <select id="doc-selector" onchange="loadDocument(this.value)">
       <option value="">-- 选择题库 --</option>
     </select>
+    <span class="btn-error-book" id="btn-error-book" onclick="toggleErrorBookPanel()" style="display:none">错题集</span>
+    <button class="btn-theme" id="btn-theme" onclick="toggleTheme()" title="切换夜间模式">🌙</button>
+    <div class="auth-area">
+      <span class="username-text" id="auth-username"></span>
+      <span class="toggle-btn" id="btn-auth" onclick="showAuthModal()">登录</span>
+    </div>
   </div>
 </header>
 
@@ -943,6 +1259,19 @@ footer {
   </div>
 
   <div id="practice-area" style="display:none;">
+    <div class="error-book-panel" id="error-book-panel">
+      <h3>错题集 <span id="eb-close" style="cursor:pointer;font-size:14px;color:var(--text-secondary);margin-left:auto;" onclick="toggleErrorBookPanel()">收起</span></h3>
+      <div class="eb-stats" id="eb-stats"></div>
+      <div class="eb-source-list" id="eb-source-list"></div>
+      <div class="eb-question-list" id="eb-question-list"></div>
+      <div class="eb-practice-bar">
+        <label style="font-size:13px;white-space:nowrap;">练习数量</label>
+        <input type="range" id="eb-slider" min="5" max="100" value="30" step="5" oninput="document.getElementById('eb-count').textContent=this.value">
+        <span class="count-display" id="eb-count" style="font-size:16px;">30</span>
+        <button class="random-btn" onclick="startErrorBookPractice()">开始错题练习</button>
+      </div>
+    </div>
+
     <div class="random-panel" id="random-panel">
       <label>随机抽题</label>
       <input type="range" id="rand-slider" min="10" max="100" value="50" step="5" oninput="document.getElementById('rand-count').textContent=this.value">
@@ -952,7 +1281,7 @@ footer {
 
     <div class="exam-title-bar" id="exam-title-bar" style="display:none;">
       <span class="exam-label" id="exam-label"></span>
-      <button class="back-btn" onclick="exitRandomExam()">← 返回题库</button>
+      <button class="back-btn" id="btn-exit-practice" onclick="exitPracticeMode()">← 返回</button>
     </div>
 
     <div class="source-distribution" id="source-distribution"></div>
@@ -1011,6 +1340,20 @@ footer {
   </div>
 </main>
 
+<div class="modal-overlay" id="auth-modal" style="display:none" onclick="if(event.target===this)closeAuthModal()">
+  <div class="modal-card">
+    <h3 id="auth-modal-title">登录</h3>
+    <input id="auth-username-input" placeholder="用户名" autocomplete="username" />
+    <input id="auth-password-input" type="password" placeholder="密码" autocomplete="current-password" />
+    <div class="auth-error" id="auth-error"></div>
+    <div class="auth-actions">
+      <button class="confirm-btn" id="auth-submit-btn" onclick="doLogin()">登录</button>
+      <span class="toggle-btn" onclick="doRegister()">注册</span>
+    </div>
+    <button class="toggle-btn" onclick="closeAuthModal()" style="width:100%;margin-top:8px">取消</button>
+  </div>
+</div>
+
 <footer>专业英语刷题系统 · Word 文档自动解析</footer>
 
 <script>
@@ -1030,7 +1373,25 @@ let examMode = false;          // 考试模式
 let savedShowTrans = true;     // 保存考试前的翻译开关状态
 let savedShowOptTrans = true;
 
+function toggleTheme() {
+  const html = document.documentElement;
+  const isDark = html.getAttribute('data-theme') === 'dark';
+  html.setAttribute('data-theme', isDark ? '' : 'dark');
+  document.getElementById('btn-theme').textContent = isDark ? '🌙' : '☀️';
+  localStorage.setItem('theme', isDark ? '' : 'dark');
+}
+
+function loadTheme() {
+  const saved = localStorage.getItem('theme');
+  if (saved === 'dark') {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    document.getElementById('btn-theme').textContent = '☀️';
+  }
+}
+
 async function init() {
+  loadTheme();
+  checkAuth();
   try {
     const res = await fetch('/api/documents');
     documents = await res.json();
@@ -1155,6 +1516,9 @@ function renderQuestion() {
   }
   if (q.source) {
     html += `<span class="source-badge">${q.source}</span>`;
+  }
+  if (isErrorBookPractice) {
+    html += `<span class="error-practice-badge">错题练习</span>`;
   }
   html += `</div>`;
   html += `<div class="question-translation" id="q-trans" style="display:${showTranslation && q.question_translation ? '' : 'none'}">${q.question_translation || ''}</div>`;
@@ -1533,6 +1897,11 @@ function exitRandomExam() {
 }
 
 document.addEventListener('keydown', e => {
+  if (document.getElementById('auth-modal').style.display !== 'none' && document.getElementById('auth-modal').style.display !== '') {
+    if (e.key === 'Enter') { doLogin(); e.preventDefault(); }
+    if (e.key === 'Escape') closeAuthModal();
+    return;
+  }
   if (e.key === 'ArrowRight') nextQuestion();
   if (e.key === 'ArrowLeft') prevQuestion();
   const q = questions[currentIndex];
@@ -1578,7 +1947,28 @@ async function submitScore() {
     saveScore();
     updateStats();
     showScorePanel();
-    showToast(`成绩: ${scoreData.earned_points}/${scoreData.total_points} · ${scoreData.percentage}% · 评级 ${scoreData.grade}`, 'success');
+
+    if (isErrorBookPractice && currentUser) {
+      for (const q of questions) {
+        const saved = userAnswers[q.id];
+        if (!saved || !saved.revealed || !q.error_book_id) continue;
+        const correct = saved.correct || false;
+        try {
+          await fetch('/api/error-book/attempts', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              error_book_id: q.error_book_id,
+              user_answer: saved.selected || '',
+              is_correct: correct
+            })
+          });
+        } catch(e) {}
+      }
+      showToast(`成绩: ${scoreData.earned_points}/${scoreData.total_points} · ${scoreData.percentage}% · 评级 ${scoreData.grade}（错题记录已更新）`, 'success');
+    } else {
+      showToast(`成绩: ${scoreData.earned_points}/${scoreData.total_points} · ${scoreData.percentage}% · 评级 ${scoreData.grade}`, 'success');
+    }
   } catch(e) {
     console.error('提交成绩失败', e);
   }
@@ -1714,6 +2104,229 @@ function showToast(msg, type) {
   el.textContent = msg;
   document.body.appendChild(el);
   setTimeout(() => el.remove(), 3000);
+}
+
+// ======= Auth =======
+
+let currentUser = null;
+let isErrorBookPractice = false;
+
+async function checkAuth() {
+  try {
+    const res = await fetch('/api/me');
+    const data = await res.json();
+    currentUser = data.logged_in ? data : null;
+  } catch(e) {
+    currentUser = null;
+  }
+  updateAuthUI();
+}
+
+function updateAuthUI() {
+  const btn = document.getElementById('btn-auth');
+  const nameEl = document.getElementById('auth-username');
+  const ebBtn = document.getElementById('btn-error-book');
+  if (currentUser) {
+    nameEl.textContent = currentUser.username;
+    btn.textContent = '退出';
+    btn.onclick = doLogout;
+    ebBtn.style.display = '';
+  } else {
+    nameEl.textContent = '';
+    btn.textContent = '登录';
+    btn.onclick = showAuthModal;
+    ebBtn.style.display = 'none';
+  }
+}
+
+function showAuthModal() {
+  document.getElementById('auth-modal').style.display = '';
+  document.getElementById('auth-username-input').value = '';
+  document.getElementById('auth-password-input').value = '';
+  document.getElementById('auth-error').textContent = '';
+  document.getElementById('auth-username-input').focus();
+}
+
+function closeAuthModal() {
+  document.getElementById('auth-modal').style.display = 'none';
+}
+
+async function doLogin() {
+  const username = document.getElementById('auth-username-input').value.trim();
+  const password = document.getElementById('auth-password-input').value;
+  const errEl = document.getElementById('auth-error');
+  if (!username || !password) { errEl.textContent = '请输入用户名和密码'; return; }
+  try {
+    const res = await fetch('/api/login', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ username, password })
+    });
+    const data = await res.json();
+    if (data.ok) {
+      currentUser = data;
+      updateAuthUI();
+      closeAuthModal();
+      showToast('登录成功', 'success');
+    } else {
+      errEl.textContent = data.error || '登录失败';
+    }
+  } catch(e) {
+    errEl.textContent = '网络错误';
+  }
+}
+
+async function doRegister() {
+  const username = document.getElementById('auth-username-input').value.trim();
+  const password = document.getElementById('auth-password-input').value;
+  const errEl = document.getElementById('auth-error');
+  if (!username || !password) { errEl.textContent = '请输入用户名和密码'; return; }
+  try {
+    const res = await fetch('/api/register', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ username, password })
+    });
+    const data = await res.json();
+    if (data.ok) {
+      currentUser = data;
+      updateAuthUI();
+      closeAuthModal();
+      showToast('注册成功并已登录', 'success');
+    } else {
+      errEl.textContent = data.error || '注册失败';
+    }
+  } catch(e) {
+    errEl.textContent = '网络错误';
+  }
+}
+
+async function doLogout() {
+  try {
+    await fetch('/api/logout', { method: 'POST' });
+  } catch(e) {}
+  currentUser = null;
+  updateAuthUI();
+  toggleErrorBookPanel(false);
+  showToast('已退出登录', 'info');
+}
+
+// ======= Error Book =======
+
+let errorBookVisible = false;
+
+function toggleErrorBookPanel(forceState) {
+  if (!currentUser) { showAuthModal(); return; }
+  errorBookVisible = forceState !== undefined ? forceState : !errorBookVisible;
+  const panel = document.getElementById('error-book-panel');
+  const btn = document.getElementById('btn-error-book');
+  panel.classList.toggle('visible', errorBookVisible);
+  btn.classList.toggle('active', errorBookVisible);
+  if (errorBookVisible) loadErrorBook();
+}
+
+async function loadErrorBook() {
+  try {
+    const [listRes, statsRes] = await Promise.all([
+      fetch('/api/error-book'),
+      fetch('/api/error-book/stats')
+    ]);
+    const list = await listRes.json();
+    const stats = await statsRes.json();
+
+    document.getElementById('eb-stats').innerHTML = `
+      <div class="eb-stat">错题总数 <span>${stats.total_errors}</span></div>
+      <div class="eb-stat">已掌握 <span>${stats.mastered_count}</span></div>
+      <div class="eb-stat">正确率 <span>${stats.accuracy_rate}%</span></div>
+    `;
+
+    let sourceHtml = '';
+    for (const [src, cnt] of Object.entries(stats.by_source)) {
+      sourceHtml += `<div class="eb-source-item"><span>${src.replace('.docx','')}</span><span class="eb-source-count">${cnt} 题</span></div>`;
+    }
+    document.getElementById('eb-source-list').innerHTML = sourceHtml || '<div style="font-size:12px;color:var(--text-secondary);padding:4px 0;">暂无数据</div>';
+
+    let qHtml = '';
+    const displayList = list.slice(0, 50);
+    for (const item of displayList) {
+      const badge = item.mastered
+        ? '<span class="eb-mastered">已掌握</span>'
+        : `<span class="eb-not-mastered">错${item.wrong_count}次</span>`;
+      qHtml += `<div class="eb-question-item"><span>#${item.question_id} · ${item.source_file.replace('.docx','').substring(0,20)}</span>${badge}</div>`;
+    }
+    if (list.length > 50) {
+      qHtml += `<div class="eb-question-item" style="justify-content:center;color:var(--text-secondary);">...共 ${list.length} 题</div>`;
+    }
+    document.getElementById('eb-question-list').innerHTML = qHtml || '<div style="font-size:12px;color:var(--text-secondary);padding:8px 0;">暂无错题</div>';
+  } catch(e) {
+    console.error('加载错题集失败', e);
+  }
+}
+
+async function startErrorBookPractice() {
+  const count = parseInt(document.getElementById('eb-slider').value);
+  try {
+    const res = await fetch('/api/error-book/practice', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ count })
+    });
+    const data = await res.json();
+    if (data.error) {
+      showToast(data.error, 'info');
+      return;
+    }
+
+    isErrorBookPractice = true;
+    isRandomExam = false;
+    currentDocIndex = -1;
+    currentIndex = 0;
+    userAnswers = {};
+    scoreData = null;
+    questions = data.questions;
+
+    document.getElementById('empty-state').style.display = 'none';
+    document.getElementById('practice-area').style.display = '';
+    document.getElementById('exam-title-bar').style.display = '';
+    document.getElementById('random-panel').style.display = 'none';
+    document.getElementById('error-book-panel').classList.remove('visible');
+    document.getElementById('btn-error-book').classList.remove('active');
+    errorBookVisible = false;
+    document.getElementById('exam-label').innerHTML = `错题练习 <span>(${data.total} 题)</span>`;
+
+    let distHtml = '';
+    for (const [src, cnt] of Object.entries(data.sources)) {
+      distHtml += `<span class="source-tag">${src.substring(0, 20)} <span>×${cnt}</span></span>`;
+    }
+    document.getElementById('source-distribution').innerHTML = distHtml;
+
+    document.getElementById('doc-selector').value = '';
+    updateStats();
+    renderQuestion();
+    scrollToQuestion();
+  } catch(e) {
+    console.error('错题练习失败', e);
+    showToast('加载失败', 'info');
+  }
+}
+
+function exitPracticeMode() {
+  if (isErrorBookPractice) {
+    isErrorBookPractice = false;
+    toggleErrorBookPanel(true);
+    questions = [];
+    currentIndex = 0;
+    userAnswers = {};
+    scoreData = null;
+    document.getElementById('empty-state').style.display = '';
+    document.getElementById('practice-area').style.display = 'none';
+    document.getElementById('exam-title-bar').style.display = 'none';
+    document.getElementById('source-distribution').innerHTML = '';
+    document.getElementById('random-panel').style.display = '';
+    document.getElementById('doc-selector').value = '';
+  } else {
+    exitRandomExam();
+  }
 }
 
 init();

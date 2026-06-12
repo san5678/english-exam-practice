@@ -2814,8 +2814,8 @@
           "结构简单"
         ],
         "question_translation": "SRAM的优点包括______。",
-        "answer": "ABD",
-        "explanation": "SRAM速度快、无需刷新、结构简单，容量小，故选ABD。",
+        "answer": "AB",
+        "explanation": "SRAM速度快、无需刷新、结构简单，容量小，故选AB。",
         "introduction": "",
         "section": "二. 多选题（共10题，23.8分）",
         "type": "multiple"
@@ -2880,8 +2880,8 @@
           "体积小"
         ],
         "question_translation": "半导体存储器的特点包括______。",
-        "answer": "ABCD",
-        "explanation": "半导体存储器低功耗、大容量、高速、小体积，故选ABCD。",
+        "answer": "ACD",
+        "explanation": "半导体存储器低功耗、速度快、体积小，大容量不是其特点，故选ACD。",
         "introduction": "",
         "section": "二. 多选题（共10题，23.8分）",
         "type": "multiple"
@@ -4772,8 +4772,8 @@
           "图由顶点和边组成"
         ],
         "question_translation": "关于图的正确描述有？（）",
-        "answer": "ACD",
-        "explanation": "树是连通且无环的图（A正确）；图的定义是由顶点（vertices）和边（edges）组成（D正确），可无边缘（如孤立顶点构成的图，C正确）；图至少有0个顶点，但若有顶点，可只有1个，但“可以有”不等于“正确描述”，且B表述不严谨（图可无顶点），核心正确选项为ACD。",
+"answer": "ABCD",
+        "explanation": "树是连通且无环的图（A正确）；图可以只有一个顶点（B正确）；图可以没有边（C正确）；图由顶点和边组成（D正确），故选ABCD。",
         "introduction": "",
         "section": "二. 多选题（共20题）",
         "type": "multiple"
@@ -5014,8 +5014,8 @@
           "冒泡排序"
         ],
         "question_translation": "最坏时间复杂度为 O(n²) 的排序算法有？（）",
-        "answer": "ABCD",
-        "explanation": "冒泡排序、插入排序、选择排序的最坏时间复杂度均为O(n²)；快速排序最坏情况（数据有序或逆序）下，时间复杂度退化为O(n²)，故选ABCD。",
+        "answer": "ABD",
+        "explanation": "冒泡排序、插入排序、选择排序的最坏时间复杂度均为O(n²)；快速排序最坏情况（数据有序或逆序）下，时间复杂度退化为O(n²)，故选ABD。",
         "introduction": "",
         "section": "二. 多选题（共20题）",
         "type": "multiple"
@@ -6124,8 +6124,8 @@
           "平均查找时间复杂度为O(log n)"
         ],
         "question_translation": "以下关于二叉搜索树的说法正确的是（ ）。",
-        "answer": "ABCD",
-        "explanation": "Binary Search Tree（二叉搜索树）的核心特征的包括：左子树所有节点值小于根节点值（C正确），右子树所有节点值大于根节点值（A正确）；中序遍历二叉搜索树可得到有序序列，因此它是一种有序结构（B正确）；平均情况下，二叉搜索树的查找时间复杂度为O(log n)（D正确），故选ABCD。",
+        "answer": "ACD",
+        "explanation": "Binary Search Tree（二叉搜索树）的核心特征的包括：左子树所有节点值小于根节点值（C正确），右子树所有节点值大于根节点值（A正确）；中序遍历二叉搜索树可得到有序序列，但它不是一种有序结构（B错误）；平均情况下，二叉搜索树的查找时间复杂度为O(log n)（D正确），故选ACD。",
         "introduction": "",
         "section": "一. 单选题（共35题）",
         "type": "multiple"
@@ -6389,7 +6389,7 @@
         ],
         "question_translation": "以下关于堆的说法正确的是（ ）。",
         "answer": "ACD",
-        "explanation": "Heap（堆）的特征：通常实现为Complete Binary Tree（完全二叉树，A正确）；Min-heap（小顶堆）的父节点值小于或等于子节点值（C正确）；Max-heap（大顶堆）的父节点值大于或等于子节点值（D正确）；B错误，堆不是有序结构，仅保证根节点是最大/最小值，子树内部无有序要求，故选ACD。",
+        "explanation": "Heap（堆）的特征：通常实现为Complete Binary Tree（完全二叉树，A正确）；Min-heap（小顶堆）的父节点值小于或等于子节点值（C正确）；Max-heap（大顶堆）的父节点值大于或等于子节点值（D正确）；B错误，堆不是有序结构，故选ACD。",
         "introduction": "",
         "section": "五. 简答题（翻译）",
         "type": "multiple"
@@ -7654,8 +7654,8 @@
           "数组二分查找",
           "链表"
         ],
-        "answer": "BC",
-        "explanation": "插入排序、基于数组的二分查找依赖随机访问特性实现；链表仅支持顺序访问，哈希表无随机访问需求。",
+        "answer": "ABC",
+        "explanation": "哈希表通过哈希函数直接定位存储位置，需要随机访问能力；插入排序、基于数组的二分查找也依赖随机访问特性实现；链表仅支持顺序访问，故选ABC。",
         "introduction": "",
         "section": "二、多项选择题（31-50）",
         "type": "multiple"
@@ -8503,7 +8503,7 @@
           "最优子结构"
         ],
         "answer": "BD",
-        "explanation": "动态规划必备两大特征：重叠子问题、最优子结构；A 是贪心、C 不符合 DP。",
+        "explanation": "动态规划必备两大特征：重叠子问题、最优子结构；A 是贪心、C 不符合 DP，故选BD。",
         "introduction": "",
         "section": "二、多项选择题（31–50）",
         "type": "multiple"
@@ -8788,8 +8788,8 @@
           "爬楼梯问题",
           "最长公共子序列"
         ],
-        "answer": "ABCD",
-        "explanation": "0-1背包、分数背包、爬楼梯、最长公共子序列均可用动态规划求解；其中分数背包也可用贪心算法，但动态规划同样能得到最优解。",
+        "answer": "ACD",
+        "explanation": "0-1背包、爬楼梯、最长公共子序列均可用动态规划求解；分数背包也可用贪心算法，但动态规划同样能得到最优解，故选ACD。",
         "introduction": "",
         "section": "二、多项选择题（31–50）",
         "type": "multiple"
@@ -12114,8 +12114,8 @@
           "手动指针操作",
           "自动内存分配"
         ],
-        "answer": "ABD",
-        "explanation": "Java自动内存管理包含自动内存分配、主动内存释放、垃圾回收机制，Java无指针概念，不支持手动指针操作。",
+        "answer": "BD",
+        "explanation": "Java自动内存管理包含垃圾回收、自动内存分配，Java无指针概念，不支持手动指针操作，主动内存释放不是Java自动内存管理的特性，故选BD。",
         "introduction": "",
         "section": "二. 多选题（10题）",
         "type": "multiple"
@@ -12422,8 +12422,8 @@
           "早期错误检查",
           "手动内存管理"
         ],
-        "answer": "ABC",
-        "explanation": "Java通过编译期早期错误检查、运行时异常处理、简洁规范的语法保障程序健壮性，采用自动内存管理，无需手动操作。",
+        "answer": "AC",
+        "explanation": "Java通过编译期早期错误检查、运行时异常处理保障程序健壮性，简洁语法不是健壮性的实现方式，采用自动内存管理，无需手动操作，故选AC。",
         "introduction": "",
         "section": "二. 多选题（10题）",
         "type": "multiple"
